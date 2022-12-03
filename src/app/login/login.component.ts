@@ -6,10 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  invalidLogin: boolean = true;
+  uname: string = ''
+  upass: string = ''
+  invalidLogin: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  handleLogin()
+  {
+    if(this.uname === '' || this.upass === '')
+    {
+      this.invalidLogin = true;
+    }
+    else{
+      this.invalidLogin = false;
+    }
+  }
 }
