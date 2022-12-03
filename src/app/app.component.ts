@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Jewellery';
+  onRightClick(): boolean {
+    return false;
+  }
 }

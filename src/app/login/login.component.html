@@ -1,0 +1,20 @@
+<h1 class="text-center title-font">Login</h1>
+<form action="">
+    <div class="container ">
+        <div class="alert alert-warning title-font alert-place" *ngIf="invalidLogin">Invalid Credentials</div>
+
+        <div class="form-outline mb-4">
+            <input type="text" id="username" class="form-control input-sm" />
+            <label class="form-label title-font" for="username">Username</label>
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+            <input type="password" id="password" class="form-control" />
+            <label class="form-label title-font" for="password">Password</label>
+        </div>
+        <div class="btn-place">
+            <button type="button" class="btn btn-success title-font">Sign in</button>
+        </div>
+    </div>
+</form>
