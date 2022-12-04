@@ -8,6 +8,8 @@ import { SignupComponent } from './signup/signup.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LogoutComponent } from './logout/logout.component';
+import { MainComponent } from './main/main.component';
+import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LogoutComponent } from './logout/logout.component';
     SignupComponent,
     HeaderComponent,
     FooterComponent,
-    LogoutComponent
+    LogoutComponent,
+    MainComponent,
+    AdminPanelComponent
   ],
   imports: [
     BrowserModule,

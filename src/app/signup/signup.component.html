@@ -1,4 +1,4 @@
-<h2 class="text-center title-font mt-4">Sign up</h2>
+<h2 class="text-center title-font">Sign up</h2>
 <div class="container">
     <form action="">
         <div class="alert alert-warning title-font alert-place" *ngIf="invalidLogin">Please fill all the details</div>
@@ -6,23 +6,23 @@
         <div class="form-outline mb-4">
             <input type="text" id="firstName" class="form-control input-sm" [(ngModel)]="fname"
                 [ngModelOptions]="{standalone: true}">
-            <label class="form-label title-font" for="firstName">First Name</label>
+            <label class="form-label title-font required-field" for="firstName" >First Name </label>
         </div>
         <div class="form-outline mb-4">
             <input type="text" id="lastName" class="form-control input-sm" [(ngModel)]="lname"
                 [ngModelOptions]="{standalone: true}">
-            <label class="form-label title-font" for="lastName">Last Name</label>
+            <label class="form-label title-font required-field" for="lastName">Last Name </label>
         </div>
 
         <div class="form-outline mb-4">
             <input type="text" id="username" class="form-control input-sm" [(ngModel)]="uname"
                 [ngModelOptions]="{standalone: true}">
-            <label class="form-label title-font" for="username">Username</label>
+            <label class="form-label title-font required-field" for="username">Username </label>
         </div>
         <div class="form-outline mb-4">
             <input type="password" id="password" class="form-control" [(ngModel)]="upass"
                 [ngModelOptions]="{standalone: true}" autocomplete="on">
-            <label class="form-label title-font" for="password">Password</label>
+            <label class="form-label title-font required-field" for="password">Password </label>
         </div>
         <div class="btn-place">
             <button type="button" class="btn btn-success title-font" (click)="handleSignUp()">Sign up</button>

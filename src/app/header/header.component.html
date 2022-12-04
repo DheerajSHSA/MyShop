@@ -2,11 +2,11 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div><a routerLink="" class="navbar-brand content">Jewellery App</a></div>
         <ul class="navbar-nav">
-            <li><a *ngIf="!this.isLoggedIn" routerLink="" class="nav-link">Sign In</a></li>
+            <li><a *ngIf="!this.service.isLoggedIn" routerLink="" class="nav-link">Sign In</a></li>
         </ul>
         <ul class="navbar-nav navbar-collapse justify-content-end">
-            <li><a *ngIf="!this.isLoggedIn" routerLink="signup" class="nav-link">Create an Account</a></li>
-            <li><a *ngIf="this.isLoggedIn" routerLink="" class="nav-link">Logout</a></li>
+            <li><a *ngIf="!this.service.isLoggedIn" routerLink="signup" class="nav-link">Create an Account</a></li>
+            <li><a *ngIf="this.service.isLoggedIn" routerLink="logout" class="nav-link">Logout</a></li>
         </ul>
     </nav>
 </header>

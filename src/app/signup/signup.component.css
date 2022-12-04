@@ -11,3 +11,8 @@
 .title-font {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.required-field::after {
+    content: "*";
+    color: red;
+}

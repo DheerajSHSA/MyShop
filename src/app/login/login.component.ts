@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationServiceService } from '../services/authentication-service.service';
 
 @Component({
   selector: 'app-login',
@@ -8,20 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
   uname: string = ''
   upass: string = ''
-  invalidLogin: boolean = false;
-  constructor() { }
+  constructor(public service: AuthenticationServiceService) { }
 
   ngOnInit(): void {
   }
 
-  handleLogin()
-  {
-    if(this.uname === '' || this.upass === '')
-    {
-      this.invalidLogin = true;
+  handleLogin() {
+    if (this.uname !== '' && this.upass !== '') {
+      this.service.login(this.uname, this.upass);
     }
     else{
-      this.invalidLogin = false;
+      this.service.invalidLogin = true;
     }
   }
 }
