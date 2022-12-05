@@ -1,36 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+  import { Component, OnInit } from '@angular/core';
+import { Item } from '../item';
 
-@Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
-})
-export class MainComponent implements OnInit {
-  itema: number = 0;
-  itemb: number = 0;
-  itemc: number = 0;
-  constructor() { }
+  @Component({
+    selector: 'app-main',
+    templateUrl: './main.component.html',
+    styleUrls: ['./main.component.css']
+  })
 
-  ngOnInit(): void {
-  }
+  export class MainComponent implements OnInit {
+    items = [
+      new Item('Ring','https://images.pexels.com/photos/204993/pexels-photo-204993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',399)
+    ]
+    
+    constructor() { }
 
-  addA() {
-    this.itema++;
-  }
-  addB() {
-    this.itemb++;
-  }
-  addC() {
-    this.itemc++;
-  }
-  delA() {
-    this.itema--;
-  }
-  delB() {
-    this.itemb--;
-  }
-  delC() {
-    this.itemc--;
-  }
+    ngOnInit(): void {
+    }
 
-}
+  }
