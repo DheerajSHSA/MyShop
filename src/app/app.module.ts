@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LogoutComponent } from './logout/logout.component';
 import { MainComponent } from './main/main.component';
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
+import { OwnerPanelComponent } from './owner-panel/owner-panel.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AdminPanelComponent } from './admin-panel/admin-panel.component';
     FooterComponent,
     LogoutComponent,
     MainComponent,
-    AdminPanelComponent
+    AdminPanelComponent,
+    OwnerPanelComponent
   ],
   imports: [
     BrowserModule,

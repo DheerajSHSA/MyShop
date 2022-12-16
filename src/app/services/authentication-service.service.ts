@@ -10,8 +10,10 @@ export class AuthenticationServiceService {
   constructor(public router: Router) { }
 
   login(username: string, password: string) {
-    if(username === '' || password === '')
+    if(username === 'owner' || password === 'owner')
     {
+      this.router.navigate(['ownerpanel'])
+      this.isLoggedIn = true; 
       this.invalidLogin = true;
     }
     else if(username === 'customer' && password === 'dummy')
