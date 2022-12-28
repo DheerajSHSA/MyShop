@@ -1,7 +1,7 @@
 export class Item {
-    name: string = ''
-    link: string = ''
-    price: number = 0
+    public name: string = ''
+    public link: string = ''
+    public price: number = 0
     public constructor(
         name: string,
         link: string,
