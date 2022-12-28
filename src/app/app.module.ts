@@ -11,6 +11,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { MainComponent } from './main/main.component';
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 import { OwnerPanelComponent } from './owner-panel/owner-panel.component';
+import { NewItemComponent } from './new-item/new-item.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { OwnerPanelComponent } from './owner-panel/owner-panel.component';
     LogoutComponent,
     MainComponent,
     AdminPanelComponent,
-    OwnerPanelComponent
+    OwnerPanelComponent,
+    NewItemComponent
   ],
   imports: [
     BrowserModule,
