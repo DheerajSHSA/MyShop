@@ -7,14 +7,20 @@ import { Item } from '../item';
   styleUrls: ['./new-item.component.css']
 })
 export class NewItemComponent implements OnInit {
-  
+  name: string = 'Ring'
+  link: string = ''
+  price: number = 0 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  add(item: Item)
+  {
+    
+  }
+
 }
 
-const myItem = new Item("Ring", "", 123)
 
 
