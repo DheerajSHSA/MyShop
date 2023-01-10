@@ -1,6 +1,6 @@
 export class Item {
-    public name: string = "";
-    public image: File = new File([], 'defaultName');
+    public name: string = '';
+    public image: File | null = null;
     public price: number = 0;
 
     public constructor(name: string, file: File, price: number)

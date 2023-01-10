@@ -6,7 +6,7 @@ import { Item } from '../item';
 })
 export class ItemsService {
   items: [Item] = [
-    new Item('', new File([], ''), 0)
+    new Item('Example Item', new File([], "exampleFileName"), 99)
   ]
   constructor() { }
 }
