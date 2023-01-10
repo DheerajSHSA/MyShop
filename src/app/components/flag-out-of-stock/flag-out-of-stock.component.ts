@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Item } from 'src/app/models/item';
 import { ItemsService } from 'src/app/services/items.service';
 
 @Component({
@@ -20,5 +21,10 @@ export class FlagOutOfStockComponent implements OnInit {
   //Function for navigation back to the main menu
   back(): void {
     this.router.navigate(['ownerpanel'])
+  }
+
+  //Function to invoke flagOutOfStock method in the itemService
+  outOfStock(item: Item): void {
+    this.itemService.outOfStock(item)
   }
 }

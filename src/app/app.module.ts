@@ -14,6 +14,7 @@ import { OwnerPanelComponent } from './components/owner-panel/owner-panel.compon
 import { NewItemComponent } from './components/new-item/new-item.component';
 import { RemoveAnItemComponent } from './components/remove-an-item/remove-an-item.component';
 import { FlagOutOfStockComponent } from './components/flag-out-of-stock/flag-out-of-stock.component';
+import { FlagBackInStockComponent } from './components/flag-back-in-stock/flag-back-in-stock.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FlagOutOfStockComponent } from './components/flag-out-of-stock/flag-out
     OwnerPanelComponent,
     NewItemComponent,
     RemoveAnItemComponent,
-    FlagOutOfStockComponent
+    FlagOutOfStockComponent,
+    FlagBackInStockComponent
   ],
   imports: [
     BrowserModule,
