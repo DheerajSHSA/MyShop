@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Item } from '../item';
-import { MainComponent } from '../main/main.component';
 import { ItemsService } from '../services/items.service';
 
 @Component({
@@ -11,7 +10,7 @@ import { ItemsService } from '../services/items.service';
 })
 export class NewItemComponent implements OnInit {
   name: string = '';
-  link: any; 
+  imageLink: string = ''
   price: number = 0;
   constructor(
     private router: Router,
@@ -21,8 +20,9 @@ export class NewItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //To add an Item to the database
   add() {
-    this.itemService.items.push(new Item(this.name, this.link, this.price));
+    this.itemService.items.push(new Item(this.name, this.imageLink, this.price));
     this.router.navigate(['shopping']);
   }
 

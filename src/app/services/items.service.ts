@@ -6,7 +6,7 @@ import { Item } from '../item';
 })
 export class ItemsService {
   items: [Item] = [
-    new Item('Example Item', new File([], "exampleFileName"), 99)
+    new Item('Ring', 'https://staticimg.titan.co.in/Tanishq/Catalog/513218FPLAA00_1.jpg', 99)
   ]
   constructor() { }
 }
