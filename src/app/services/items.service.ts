@@ -15,6 +15,10 @@ export class ItemsService {
   // Function to remove the Item from the Database
   removeItem(itemToRemove: Item): void {
     this.items.splice(this.items.indexOf(itemToRemove), 1);
+  }
 
+  // Function to remove all the Items from the Database
+  removeAllTheItems(): void {
+    this.items.splice(0)
   }
 }
