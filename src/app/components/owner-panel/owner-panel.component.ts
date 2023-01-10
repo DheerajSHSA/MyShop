@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ItemsService } from 'src/app/services/items.service';
 
 @Component({
   selector: 'app-owner-panel',
@@ -8,7 +9,10 @@ import { Router } from '@angular/router';
 })
 export class OwnerPanelComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    public itemsService: ItemsService
+  ) { }
 
   ngOnInit(): void {
   }
@@ -16,10 +20,16 @@ export class OwnerPanelComponent implements OnInit {
   addNewItem(): void {
     this.router.navigate(['ownerpanel/new-item'])
   }
-  
+
   //Function for navigation to the Removing an Item Page
   removeAnItem(): void {
     this.router.navigate(['ownerpanel/remove-an-item'])
+  }
+
+  //Function for invoking the removeAll method in the itemsService
+  removeAllItems(): void {
+    if (confirm('Are you Sure You intend to clear all the Items?'))
+      this.itemsService.removeAllTheItems()
   }
 
 

@@ -21,9 +21,14 @@ export class NewItemComponent implements OnInit {
   }
 
   //To add an Item to the database
-  add() {
+  add(): void {
     this.itemService.items.push(new Item(this.name, this.imageLink, this.price));
     this.router.navigate(['shopping']);
+  }
+
+  //Function to navigate the User back to the Main Menu
+  back(): void {
+    this.router.navigate(['ownerpanel']);
   }
 
 }
