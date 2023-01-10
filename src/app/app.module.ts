@@ -13,6 +13,7 @@ import { AdminPanelComponent } from './components/admin-panel/admin-panel.compon
 import { OwnerPanelComponent } from './components/owner-panel/owner-panel.component';
 import { NewItemComponent } from './components/new-item/new-item.component';
 import { RemoveAnItemComponent } from './components/remove-an-item/remove-an-item.component';
+import { FlagOutOfStockComponent } from './components/flag-out-of-stock/flag-out-of-stock.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { RemoveAnItemComponent } from './components/remove-an-item/remove-an-ite
     AdminPanelComponent,
     OwnerPanelComponent,
     NewItemComponent,
-    RemoveAnItemComponent
+    RemoveAnItemComponent,
+    FlagOutOfStockComponent
   ],
   imports: [
     BrowserModule,

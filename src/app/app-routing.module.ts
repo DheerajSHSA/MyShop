@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
+import { FlagOutOfStockComponent } from './components/flag-out-of-stock/flag-out-of-stock.component';
 import { LoginComponent } from './components/login/login.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { MainComponent } from './components/main/main.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'ownerpanel', component: OwnerPanelComponent },
   { path: 'adminpanel', component: AdminPanelComponent },
   { path: 'ownerpanel/new-item', component: NewItemComponent },
-  { path: 'ownerpanel/remove-an-item', component: RemoveAnItemComponent }
+  { path: 'ownerpanel/remove-an-item', component: RemoveAnItemComponent },
+  { path: 'ownerpane/flag-out-of-stock ', component: FlagOutOfStockComponent }
 ];
 
 @NgModule({
