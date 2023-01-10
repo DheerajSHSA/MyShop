@@ -6,6 +6,7 @@ import { LogoutComponent } from './components/logout/logout.component';
 import { MainComponent } from './components/main/main.component';
 import { NewItemComponent } from './components/new-item/new-item.component';
 import { OwnerPanelComponent } from './components/owner-panel/owner-panel.component';
+import { RemoveAnItemComponent } from './components/remove-an-item/remove-an-item.component';
 import { SignupComponent } from './components/signup/signup.component';
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'shopping', component: MainComponent },
   { path: 'ownerpanel', component: OwnerPanelComponent },
   { path: 'adminpanel', component: AdminPanelComponent },
-  { path: 'ownerpanel/new-item', component: NewItemComponent }
+  { path: 'ownerpanel/new-item', component: NewItemComponent },
+  { path: 'ownerpanel/remove-an-item', component: RemoveAnItemComponent }
 ];
 
 @NgModule({

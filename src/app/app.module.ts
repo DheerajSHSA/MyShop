@@ -12,6 +12,7 @@ import { MainComponent } from './components/main/main.component';
 import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
 import { OwnerPanelComponent } from './components/owner-panel/owner-panel.component';
 import { NewItemComponent } from './components/new-item/new-item.component';
+import { RemoveAnItemComponent } from './components/remove-an-item/remove-an-item.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NewItemComponent } from './components/new-item/new-item.component';
     MainComponent,
     AdminPanelComponent,
     OwnerPanelComponent,
-    NewItemComponent
+    NewItemComponent,
+    RemoveAnItemComponent
   ],
   imports: [
     BrowserModule,
