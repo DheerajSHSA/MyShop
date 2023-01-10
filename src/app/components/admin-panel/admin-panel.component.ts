@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../user';
-import { Blocked } from '../blocked';
+import { User } from '../../models/user';
+import { Blocked } from '../../models/blocked';
 
 @Component({
   selector: 'app-admin-panel',

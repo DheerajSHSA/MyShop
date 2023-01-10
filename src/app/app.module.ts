@@ -3,15 +3,15 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { LogoutComponent } from './logout/logout.component';
-import { MainComponent } from './main/main.component';
-import { AdminPanelComponent } from './admin-panel/admin-panel.component';
-import { OwnerPanelComponent } from './owner-panel/owner-panel.component';
-import { NewItemComponent } from './new-item/new-item.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LogoutComponent } from './components/logout/logout.component';
+import { MainComponent } from './components/main/main.component';
+import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
+import { OwnerPanelComponent } from './components/owner-panel/owner-panel.component';
+import { NewItemComponent } from './components/new-item/new-item.component';
 
 @NgModule({
   declarations: [
