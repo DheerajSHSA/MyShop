@@ -1,20 +1,31 @@
-  import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Item } from '../item';
+import { ItemsService } from '../services/items.service';
 
-  @Component({
-    selector: 'app-main',
-    templateUrl: './main.component.html',
-    styleUrls: ['./main.component.css']
-  })
+@Component({
+  selector: 'app-main',
+  templateUrl: './main.component.html',
+  styleUrls: ['./main.component.css']
+})
 
-  export class MainComponent implements OnInit {
-    items = [
-      new Item('Ring','https://images.pexels.com/photos/204993/pexels-photo-204993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',399)
-    ]
-    
-    constructor() { }
+export class MainComponent implements OnInit {
 
-    ngOnInit(): void {
+  // counter for removal of the default Item template that is placed in the array
+  counter: number = 0;
+  constructor(
+    public itemService: ItemsService
+  ) { }
+
+  ngOnInit(): void {
+    //To be able to POP only the template POP if the counter is zero
+    if (this.counter == 0) {
+      this.pop();
+      this.counter++;
     }
-
   }
+
+  pop(): void {
+    this.itemService.items.shift;
+  }
+
+}

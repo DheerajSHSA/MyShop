@@ -6,15 +6,15 @@
             <label class="form-label " for="name">Item Name</label>
         </div>
         <div class="form-outline mb-4">
-            <input type="text" name="link" class="form-control input-sm" [(ngModel)]="link">
-            <label class="form-label" for="link">Link for the Picture</label>
+            <input type="file" accept=".jpg" name="link" class="form-control input-sm" [(ngModel)]="link" observeFiles>
+            <label class="form-label" for="link">Upload the Picture of this Item </label>
         </div>
         <div class="form-outline mb-4">
             <input type="number" name="price" class="form-control input-sm" [(ngModel)]="price">
             <label class="form-label " for="price">Price</label>
         </div>
         <div class="btn-place">
-            <button type="button" class="btn btn-success ">Add</button>
+            <button type="button" class="btn btn-success" (click)="add()" >Add</button>
         </div>
     </div>
 </form>
