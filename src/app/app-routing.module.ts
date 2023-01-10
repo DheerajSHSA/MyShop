@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'adminpanel', component: AdminPanelComponent },
   { path: 'ownerpanel/new-item', component: NewItemComponent },
   { path: 'ownerpanel/remove-an-item', component: RemoveAnItemComponent },
-  { path: 'ownerpane/flag-out-of-stock ', component: FlagOutOfStockComponent }
+  { path: 'ownerpane/flag-out-of-stock', component: FlagOutOfStockComponent }
 ];
 
 @NgModule({
