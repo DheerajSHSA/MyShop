@@ -1,0 +1,31 @@
+<div class="container">
+    <!-- TOP OF THE PAGE -->
+    <div class="row">
+        <div class="col-2">
+            <button class="btn btn-outline-secondary mt-2" (click)="back()"><i class="fa-solid fa-arrow-left"> Back
+            </i></button>
+        </div>
+        <div class="col-8 mt-2">
+            <h2 class="text-center text-secondary">Items in Stock</h2>
+        </div>
+        <div class="col-2">
+
+        </div>
+    </div>
+    <!-- MAIN CONTENT -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>Item Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of this.itemService.items">
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+                <td><button class="btn btn-outline-danger" (click)="outOfStock(item)">Out of Stock</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

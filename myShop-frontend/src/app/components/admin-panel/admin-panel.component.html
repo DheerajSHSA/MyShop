@@ -1,0 +1,23 @@
+<h1 >Admin Panel</h1>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>BLOCKED</th>
+                <th>BLOCK?</th>
+                <th>UNBLOCK?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.isBlocked.toString() | titlecase}}</td>
+                <td><button class="btn btn-outline-danger">Block</button></td>
+                <td><button class="btn btn-outline-success">Unblock</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

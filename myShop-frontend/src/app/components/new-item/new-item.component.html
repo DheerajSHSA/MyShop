@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-2">
+        <button class="btn btn-outline-secondary mt-2" (click)="back()">
+            <i class="fa-solid fa-arrow-left"> Back
+            </i>
+        </button>
+    </div>
+    <div class="col-8">
+        <h2 class="text-center text-secondary mt-2">Add a new Item</h2>
+    </div>
+    <div class="col-2">
+
+    </div>
+</div>
+<form action="" class="form-align">
+    <div class="container ">
+        <div class="form-outline mb-4">
+            <input type="text" name="name" class="form-control input-sm" [(ngModel)]="name">
+            <label class="form-label " for="name">Item Name</label>
+        </div>
+        <div class="form-outline mb-4">
+            <input type="file" accept=".jpg" name="img" class="form-control input-sm">
+            <label class="form-label" for="link">Upload the Picture of this Item </label>
+        </div>
+        <div class="form-outline mb-4">
+            <input type="number" name="price" class="form-control input-sm" [(ngModel)]="price">
+            <label class="form-label " for="price">Price</label>
+        </div>
+        <div class="btn-place">
+            <button type="button" class="btn btn-success" (click)="add()">Add</button>
+        </div>
+    </div>
+</form>
+<script>
+
+</script>

@@ -1,0 +1,17 @@
+.title-font {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.alert-place {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-place {
+    display: flex;
+    justify-content: center;
+}
+
+.form-align {
+    margin-top: 6%;
+}
