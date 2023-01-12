@@ -1,6 +1,6 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div><a routerLink="" class="navbar-brand content">My Shop</a></div>
+        <div><a routerLink="" class="navbar-brand content">{{this.headerService.title}}</a></div>
         <ul class="navbar-nav">
             <li><a *ngIf="!this.service.isLoggedIn" routerLink="" class="nav-link">Sign In</a></li>
         </ul>
