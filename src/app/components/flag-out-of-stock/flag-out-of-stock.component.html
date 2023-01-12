@@ -6,7 +6,7 @@
             </i></button>
         </div>
         <div class="col-8 mt-2">
-            <h2 class="text-center text-secondary">Flag Out of Stock Items</h2>
+            <h2 class="text-center text-secondary">Items in Stock</h2>
         </div>
         <div class="col-2">
 
@@ -24,7 +24,7 @@
             <tr *ngFor="let item of this.itemService.items">
                 <td>{{item.name}}</td>
                 <td>{{item.price}}</td>
-                <td><button class="btn btn-outline-danger">Out of Stock</button></td>
+                <td><button class="btn btn-outline-danger" (click)="outOfStock(item)">Out of Stock</button></td>
             </tr>
         </tbody>
     </table>

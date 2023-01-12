@@ -31,6 +31,11 @@ export class OwnerPanelComponent implements OnInit {
     this.router.navigate(['ownerpanel/flag-out-of-stock'])
   }
 
+  //Function for navigation to the Flag Back in Stock Items Page
+  flagBackInStock(): void {
+    this.router.navigate(['ownerpanel/flag-back-in-stock'])
+  }
+
   //Function for invoking the removeAll method in the itemsService
   removeAllItems(): void {
     if (confirm('Are you Sure You intend to clear all the Items?'))

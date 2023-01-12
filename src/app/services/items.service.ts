@@ -30,7 +30,14 @@ export class ItemsService {
 
   // Function to flag an Item as out of Stock
   outOfStock(itemToFlag: Item): void {
+    this.items.splice(this.items.indexOf(itemToFlag), 1);
     this.itemsOutOfStock.push(itemToFlag)
+  }
+
+  // Function to flag an Item as back in Stock
+  backInStock(itemToFlag: Item): void {
+    this.itemsOutOfStock.splice(this.itemsOutOfStock.indexOf(itemToFlag), 1);
+    this.items.push(itemToFlag)
   }
 
 }
