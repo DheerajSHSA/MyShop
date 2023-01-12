@@ -42,5 +42,8 @@ export class OwnerPanelComponent implements OnInit {
       this.itemsService.removeAllTheItems()
   }
 
-
+  //Function for navigation to the Change Name Page
+  changeName(): void {
+    this.router.navigate(['ownerpanel/change-name'])
+  }
 }

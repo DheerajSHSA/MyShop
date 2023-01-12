@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
+import { ChangeNameComponent } from './components/change-name/change-name.component';
 import { FlagBackInStockComponent } from './components/flag-back-in-stock/flag-back-in-stock.component';
 import { FlagOutOfStockComponent } from './components/flag-out-of-stock/flag-out-of-stock.component';
 import { LoginComponent } from './components/login/login.component';
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'ownerpanel/new-item', component: NewItemComponent },
   { path: 'ownerpanel/remove-an-item', component: RemoveAnItemComponent },
   { path: 'ownerpanel/flag-out-of-stock', component: FlagOutOfStockComponent },
-  { path: 'ownerpanel/flag-back-in-stock', component: FlagBackInStockComponent }
+  { path: 'ownerpanel/flag-back-in-stock', component: FlagBackInStockComponent },
+  { path: 'ownerpanel/change-name', component: ChangeNameComponent }
 ];
 
 @NgModule({

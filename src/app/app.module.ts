@@ -15,6 +15,7 @@ import { NewItemComponent } from './components/new-item/new-item.component';
 import { RemoveAnItemComponent } from './components/remove-an-item/remove-an-item.component';
 import { FlagOutOfStockComponent } from './components/flag-out-of-stock/flag-out-of-stock.component';
 import { FlagBackInStockComponent } from './components/flag-back-in-stock/flag-back-in-stock.component';
+import { ChangeNameComponent } from './components/change-name/change-name.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FlagBackInStockComponent } from './components/flag-back-in-stock/flag-b
     NewItemComponent,
     RemoveAnItemComponent,
     FlagOutOfStockComponent,
-    FlagBackInStockComponent
+    FlagBackInStockComponent,
+    ChangeNameComponent
   ],
   imports: [
     BrowserModule,
